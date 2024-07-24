@@ -97,6 +97,7 @@ h1 + h2 {
     display: flex;
     justify-content: center;
     gap: 32px;
+    margin-bottom: 88px;
 }
 
 .point {
@@ -110,4 +111,19 @@ h1 + h2 {
     width: 150px;
     height: 150px;
     border-color: #3882F6;
+}
+
+.quote {
+    padding: 50px;
+    background-color: #E5E7EB;
+}
+
+.quote > p {
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
 }
