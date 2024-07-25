@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,6 +10,10 @@ body {
 
 header, footer {
     background-color: #1f2937;
+}
+
+header {
+    padding-top: 12px;
 }
 
 .logo {
@@ -24,7 +31,7 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 8px;
+    gap: 16px;
     list-style-type: none;
 }
 
@@ -63,23 +70,23 @@ h1 + h2 {
 .hero-content {
     margin-top: 64px;
     display: flex;
-    /* This doesnt work as intended ... */
-    /* Maybe use max-width on the text and also reduce img width*/
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding-bottom: 100px;
 }
 
-.left-container {
-    flex: 1;
-    flex-wrap: wrap;
+.hero-content .left-container {
+    max-width: 450px;
 }
 
-.right-container {
+.hero-content .right-container {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 175px;
+    width: 450px;
+    height: 200px;
     background-color: #e5e7eb73;
 }
 
@@ -96,6 +103,7 @@ h1 + h2 {
 .info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 88px;
 }
@@ -114,16 +122,81 @@ h1 + h2 {
 }
 
 .quote {
-    padding: 50px;
+    padding: 80px;
     background-color: #E5E7EB;
 }
 
 .quote > p {
     margin: auto;
-    max-width: 1000px;
+    max-width: 800px;
     text-align: center;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
     color: #1f2937;
+}
+
+#quote-author {
+    max-width: 800px;
+    text-align: right;
+}
+
+/*Now for the call to actino part*/
+
+.action-call {
+    margin-top: 84px;
+    margin-bottom: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-container {
+    width: 800px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#action-header {
+    margin: 0;
+    color: #F9FAF8;
+}
+
+.action-container .right {
+    align-self: center;
+}
+
+#action-signup {
+    cursor: pointer;
+    margin-top: 6px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 26px;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: #3882F6;
+}
+
+#action-header + p {
+    margin-top: 0;
+    color:#E5E7EB;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*Now for the footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color:#E5E7EB;
+    font-weight: 300;
+    font-size: 18px;
 }
